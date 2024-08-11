@@ -8,7 +8,7 @@ st.title('Analisis Kinerja Halaman Web Berdasarkan Sumber Lalu Lintas')
 st.markdown('- Python libraries: numpy, pandas, streamlit, matplotlib, seaborn')
 st.markdown('- Data source: https://docs.google.com/spreadsheets/d/1HoTUoAWX3jdS3WPz6chBwiEzj7BHD4uSd5Flx3bsbWE/edit?usp=sharing')
 
-df = pd.read_excel('Assignment Data Analyst MSIB Batch 7.xlsx')
+df = pd.read_csv('new_data.csv')
 df_facebook = df[df['ga:sourceMedium'] == 'facebook / cpc']
 df_google = df[df['ga:sourceMedium'] == 'google / cpc']
 
