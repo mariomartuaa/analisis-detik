@@ -65,5 +65,27 @@ with tab2:
           'ga:avgTimeOnPage': 'sum'
       }).sort_values(by='ga:avgTimeOnPage', ascending = False).head())
 
+st.header('Korelasi antar field')
 st.image('heatmap.png')
+
+st.header('Rata-rata users facebook dan google')
+st.image('download.png')
+
+st.header('Rata-rata bounce rate facebook dan google')
+st.image('download (1).png')
+
+st.header('Rata-rata page views facebook dan google')
+st.image('download (2).png')
+
+st.header('Rata-rata page views per session facebook dan google')
+st.image('download (3).png')
+
+st.header('Rata-rata average time on page facebook dan google')
+st.image('download (4).png')'
+
+st.header('Evaluasi')
+st.markdown('-Metrik bounce rate menunjukkan korelasi yang rendah dengan metrik lainnya dalam heatmap ini. Hal ini berarti bounce rate mungkin tidak dapat diprediksi atau dikendalikan hanya dengan meningkatkan metrik lain seperti jumlah pengguna atau tampilan halaman. Bounce rate mungkin memerlukan analisis lebih mendalam atau pendekatan yang berbeda untuk pengelola situs web jika mereka ingin menurunkan angka ini.')
+st.markdown('- Facebook secara signifikan unggul dibandingkan dengan Google dalam hal jumlah pengguna, keterlibatan, dan interaksi pada halaman. Rata-rata jumlah pengguna Facebook jauh lebih tinggi, mencapai 3575 dibandingkan dengan Google yang hanya 159. Selain itu, Facebook juga mencatat rata-rata jumlah pembaca halaman yang lebih tinggi, yaitu 6273, dibandingkan dengan 290 dari Google. Meskipun selisihnya tidak terlalu besar, Facebook juga mengungguli Google dalam metrik rata-rata jumlah pembaca halaman per sesi (18 dibandingkan dengan 12) dan rata-rata waktu membaca halaman (104 detik dibandingkan dengan 79 detik). Namun, dalam hal bounce rate, kedua platform menunjukkan hasil yang hampir sama, dengan Google memiliki rata-rata bounce rate yang sedikit lebih tinggi (57) dibandingkan dengan Facebook (58).')
+st.write('Secara keseluruhan, data ini menunjukkan bahwa pengguna Facebook tidak hanya lebih banyak, tetapi juga lebih terlibat dengan konten, menghabiskan lebih banyak waktu di halaman, dan menjelajahi lebih banyak konten per sesi dibandingkan dengan pengguna Google. Bagi pemasar atau pengelola situs, hal ini menunjukkan potensi yang lebih besar untuk mendapatkan interaksi yang lebih dalam dan berarti dari pengguna yang datang melalui Facebook dibandingkan dengan Google.')
+            
       
