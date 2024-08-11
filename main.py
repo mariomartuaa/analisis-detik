@@ -4,7 +4,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 
-st.title('Bike Sharing Dataset Dashboard')
+st.title('Analisis Kinerja Halaman Web Berdasarkan Sumber Lalu Lintas')
 st.markdown('- Python libraries: numpy, pandas, streamlit, matplotlib, seaborn')
 st.markdown('- Data source: https://docs.google.com/spreadsheets/d/1HoTUoAWX3jdS3WPz6chBwiEzj7BHD4uSd5Flx3bsbWE/edit?usp=sharing')
 
