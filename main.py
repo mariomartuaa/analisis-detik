@@ -12,6 +12,7 @@ df = pd.read_csv('new_data.csv')
 df_facebook = df[df['ga:sourceMedium'] == 'facebook / cpc']
 df_google = df[df['ga:sourceMedium'] == 'google / cpc']
 
+st.header('Statistika deskriptif')
 st.table(df.describe().T)
 
 tab1, tab2 = st.tabs(["Facebook", "Google"])
