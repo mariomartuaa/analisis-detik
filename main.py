@@ -17,6 +17,7 @@ tab1, tab2, tab3 = st.tabs(["Peringkat Halaman", "Facebook", "Google"])
 with tab1:
   option = st.selectbox(
     ("ga:users", "ga:bounceRate", "ga:pageviews", "ga:pageviewsPerSession", "ga:avgTimeOnPage"),
+    placeholder="Select contact method..."
   )
   col1, col2 = st.columns(2)
   with col1:
