@@ -17,8 +17,10 @@ tab1, tab2, tab3 = st.tabs(["Peringkat Halaman", "Facebook", "Google"])
 with tab1:
   col1, col2 = st.columns(2)
   with col1:
+    st.header('Halaman dengan jumlah pengguna tertinggi')
     st.table(data=df_facebook.groupby(by='ga:pageTitle').agg({
     'ga:users': 'sum'
-}).sort_values(by='ga:users', ascending = False).head())
+}).sort_values(by='ga:users', ascending = False))
   with col2:
+    st.header('Halaman dengan jumlah bounce rate tertinggi')
     st.table(data=df[:50])
