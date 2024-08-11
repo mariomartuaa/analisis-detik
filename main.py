@@ -65,5 +65,5 @@ with tab2:
           'ga:avgTimeOnPage': 'sum'
       }).sort_values(by='ga:avgTimeOnPage', ascending = False).head())
 
-st.image()
+st.image('heatmap.png')
       
