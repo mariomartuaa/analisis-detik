@@ -81,7 +81,7 @@ st.header('Rata-rata page views per session facebook dan google')
 st.image('download (3).png')
 
 st.header('Rata-rata average time on page facebook dan google')
-st.image('download (4).png')'
+st.image('download (4).png')
 
 st.header('Evaluasi')
 st.markdown('-Metrik bounce rate menunjukkan korelasi yang rendah dengan metrik lainnya dalam heatmap ini. Hal ini berarti bounce rate mungkin tidak dapat diprediksi atau dikendalikan hanya dengan meningkatkan metrik lain seperti jumlah pengguna atau tampilan halaman. Bounce rate mungkin memerlukan analisis lebih mendalam atau pendekatan yang berbeda untuk pengelola situs web jika mereka ingin menurunkan angka ini.')
