@@ -66,13 +66,11 @@ with tab2:
       }).sort_values(by='ga:avgTimeOnPage', ascending = False).head())
 
 plt.figure(figsize=(25, 10))
-    plt.rcParams.update({'font.size': 20})
-    corr = df.select_dtypes(exclude="object").apply(lambda x: pd.factorize(x)[0]).corr()
-    mask = np.triu(np.ones_like(corr, dtype=bool))
-    sns.heatmap(corr, mask=mask, xticklabels=corr.columns, yticklabels=corr.columns, annot=True, linewidths=.2, cmap='coolwarm', vmin=-1, vmax=1)
-    plt.title('Korelasi antar field')
-    
-    # Tampilkan plot di Streamlit
-    st.pyplot(plt)
-    plt.clf()
+plt.rcParams.update({'font.size': 20})
+corr = df.select_dtypes(exclude="object").apply(lambda x: pd.factorize(x)[0]).corr()
+mask = np.triu(np.ones_like(corr, dtype=bool))
+sns.heatmap(corr, mask=mask, xticklabels=corr.columns, yticklabels=corr.columns, annot=True, linewidths=.2, cmap='coolwarm', vmin=-1, vmax=1)
+plt.title('Korelasi antar field')
+st.pyplot(plt)
+plt.clf()
       
