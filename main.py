@@ -13,4 +13,8 @@ df = pd.read_excel('Assignment Data Analyst MSIB Batch 7.xlsx')
 tab1, tab2, tab3 = st.tabs(["Peringkat Halaman", "Facebook", "Google"])
 
 with tab1:
-  st.table(data=df[:50])
+  col1, col2 = st.columns(2)
+  with col1:
+    st.table(data=df[:50])
+  with col2:
+    st.table(data=df[:50])
